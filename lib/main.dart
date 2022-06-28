@@ -1,4 +1,4 @@
-import 'package:authorization_app/login_screen.dart';
+import 'package:authorization_app/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       ],
       locale: const Locale('ru', 'RU'),
       supportedLocales: S.delegate.supportedLocales,
-      home: const LoginScreen(),
+      home: const SplashScreen(),
     );
   }
 }

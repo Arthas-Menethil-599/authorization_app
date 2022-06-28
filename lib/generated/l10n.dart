@@ -160,6 +160,16 @@ class S {
     );
   }
 
+  /// `Error`
+  String get error {
+    return Intl.message(
+      'Error',
+      name: 'error',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Close`
   String get close {
     return Intl.message(
@@ -205,6 +215,116 @@ class S {
     return Intl.message(
       'Russian',
       name: 'russian',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Do you have an account`
+  String get dontHaveAnAccountHint {
+    return Intl.message(
+      'Do you have an account',
+      name: 'dontHaveAnAccountHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create`
+  String get create {
+    return Intl.message(
+      'Create',
+      name: 'create',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Characters`
+  String get characters {
+    return Intl.message(
+      'Characters',
+      name: 'characters',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search a character`
+  String get searchCharacter {
+    return Intl.message(
+      'Search a character',
+      name: 'searchCharacter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total characters`
+  String get allCharacters {
+    return Intl.message(
+      'Total characters',
+      name: 'allCharacters',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dead`
+  String get dead {
+    return Intl.message(
+      'Dead',
+      name: 'dead',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Alive`
+  String get alive {
+    return Intl.message(
+      'Alive',
+      name: 'alive',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `unknown`
+  String get noData {
+    return Intl.message(
+      'unknown',
+      name: 'noData',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wrong password or login`
+  String get wrongLoginOrPassword {
+    return Intl.message(
+      'Wrong password or login',
+      name: 'wrongLoginOrPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OK`
+  String get ok {
+    return Intl.message(
+      'OK',
+      name: 'ok',
       desc: '',
       args: [],
     );

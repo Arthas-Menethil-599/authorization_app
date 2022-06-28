@@ -10,9 +10,21 @@
   "inputErrorCheckPassword": "Проверьте пароль",
   "inputErrorPasswordIsShort": "Пароль должен содержать не менее 8 символов",
   "tryAgain": "Попробуйте снова",
+  "error": "Ошибка",
   "close": "Закрыть",
   "signIn": "Вход",
   "language": "Язык",
   "english": "Английский",
-  "russian": "Русский"
+  "russian": "Русский",
+  "create": "Создать",
+  "settings": "Настройки",
+  "characters": "Персонажи",
+  "dontHaveAnAccountHint": "У вас все еще нет аккаунта",
+  "searchCharacter": "Найти персонажа",
+  "allCharacters": "Всего персонажей",
+  "dead": "Мертвый",
+  "alive": "Живой",
+  "noData": "Неизвестно",
+  "wrongLoginOrPassword": "Введен неверный логин или пароль",
+  "ok": "OK"
 }

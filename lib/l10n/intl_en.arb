@@ -10,9 +10,21 @@
   "inputErrorCheckPassword": "Check password",
   "inputErrorPasswordIsShort": "Password must contain more than 8 symbols",
   "tryAgain": "Try again",
+  "error": "Error",
   "close": "Close",
   "signIn": "Sign in",
   "language": "Language",
   "english": "English",
-  "russian": "Russian"
+  "russian": "Russian",
+  "dontHaveAnAccountHint": "Do you have an account",
+  "create": "Create",
+  "settings": "Settings",
+  "characters": "Characters",
+  "searchCharacter": "Search a character",
+  "allCharacters": "Total characters",
+  "dead": "Dead",
+  "alive": "Alive",
+  "noData": "unknown",
+  "wrongLoginOrPassword": "Wrong password or login",
+  "ok": "OK"
 }

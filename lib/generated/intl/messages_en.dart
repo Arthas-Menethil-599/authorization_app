@@ -22,10 +22,19 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "alive": MessageLookupByLibrary.simpleMessage("Alive"),
+        "allCharacters":
+            MessageLookupByLibrary.simpleMessage("Total characters"),
         "auth": MessageLookupByLibrary.simpleMessage("Authorization"),
+        "characters": MessageLookupByLibrary.simpleMessage("Characters"),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
         "counterValue": MessageLookupByLibrary.simpleMessage("Counter value"),
+        "create": MessageLookupByLibrary.simpleMessage("Create"),
+        "dead": MessageLookupByLibrary.simpleMessage("Dead"),
+        "dontHaveAnAccountHint":
+            MessageLookupByLibrary.simpleMessage("Do you have an account"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
+        "error": MessageLookupByLibrary.simpleMessage("Error"),
         "homeScreen": MessageLookupByLibrary.simpleMessage("Home screen"),
         "inputErrorCheckLogin":
             MessageLookupByLibrary.simpleMessage("Check login"),
@@ -39,9 +48,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Input login and password"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "noData": MessageLookupByLibrary.simpleMessage("unknown"),
+        "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "russian": MessageLookupByLibrary.simpleMessage("Russian"),
+        "searchCharacter":
+            MessageLookupByLibrary.simpleMessage("Search a character"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
-        "tryAgain": MessageLookupByLibrary.simpleMessage("Try again")
+        "tryAgain": MessageLookupByLibrary.simpleMessage("Try again"),
+        "wrongLoginOrPassword":
+            MessageLookupByLibrary.simpleMessage("Wrong password or login")
       };
 }

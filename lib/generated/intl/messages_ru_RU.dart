@@ -22,11 +22,20 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "alive": MessageLookupByLibrary.simpleMessage("Живой"),
+        "allCharacters":
+            MessageLookupByLibrary.simpleMessage("Всего персонажей"),
         "auth": MessageLookupByLibrary.simpleMessage("Авторизация"),
+        "characters": MessageLookupByLibrary.simpleMessage("Персонажи"),
         "close": MessageLookupByLibrary.simpleMessage("Закрыть"),
         "counterValue":
             MessageLookupByLibrary.simpleMessage("Значение счетчика"),
+        "create": MessageLookupByLibrary.simpleMessage("Создать"),
+        "dead": MessageLookupByLibrary.simpleMessage("Мертвый"),
+        "dontHaveAnAccountHint":
+            MessageLookupByLibrary.simpleMessage("У вас все еще нет аккаунта"),
         "english": MessageLookupByLibrary.simpleMessage("Английский"),
+        "error": MessageLookupByLibrary.simpleMessage("Ошибка"),
         "homeScreen": MessageLookupByLibrary.simpleMessage("Домашний экран"),
         "inputErrorCheckLogin":
             MessageLookupByLibrary.simpleMessage("Проверьте логин"),
@@ -40,9 +49,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Введите логин и пароль"),
         "language": MessageLookupByLibrary.simpleMessage("Язык"),
         "login": MessageLookupByLibrary.simpleMessage("Логин"),
+        "noData": MessageLookupByLibrary.simpleMessage("Неизвестно"),
+        "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "russian": MessageLookupByLibrary.simpleMessage("Русский"),
+        "searchCharacter":
+            MessageLookupByLibrary.simpleMessage("Найти персонажа"),
+        "settings": MessageLookupByLibrary.simpleMessage("Настройки"),
         "signIn": MessageLookupByLibrary.simpleMessage("Вход"),
-        "tryAgain": MessageLookupByLibrary.simpleMessage("Попробуйте снова")
+        "tryAgain": MessageLookupByLibrary.simpleMessage("Попробуйте снова"),
+        "wrongLoginOrPassword": MessageLookupByLibrary.simpleMessage(
+            "Введен неверный логин или пароль")
       };
 }
