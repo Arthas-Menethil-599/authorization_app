@@ -1,4 +1,10 @@
 {
+  "@allCharacters": {
+    "placeholders": {
+      "total": {}
+    }
+  },
+
   "counterValue": "Значение счетчика",
   "homeScreen": "Домашний экран",
   "auth": "Авторизация",
@@ -21,10 +27,15 @@
   "characters": "Персонажи",
   "dontHaveAnAccountHint": "У вас все еще нет аккаунта",
   "searchCharacter": "Найти персонажа",
-  "allCharacters": "Всего персонажей",
+  "allCharacters": "Всего персонажей: {total}",
   "dead": "Мертвый",
   "alive": "Живой",
   "noData": "Неизвестно",
   "wrongLoginOrPassword": "Введен неверный логин или пароль",
-  "ok": "OK"
+  "ok": "OK",
+  "man": "Человек",
+  "male": "Мужской",
+  "female": "Женский",
+  "charactersListIsEmpty": "Персонажей не найдено",
+  "somethingWentWrong": "Что-то пошло не так :-("
 }

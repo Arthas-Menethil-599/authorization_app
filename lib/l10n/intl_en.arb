@@ -1,4 +1,10 @@
 {
+  "@allCharacters": {
+    "placeholders": {
+      "total": {}
+    }
+  },
+
   "counterValue": "Counter value",
   "homeScreen": "Home screen",
   "auth": "Authorization",
@@ -21,10 +27,17 @@
   "settings": "Settings",
   "characters": "Characters",
   "searchCharacter": "Search a character",
-  "allCharacters": "Total characters",
+  "allCharacters": "Total characters: {total}",
   "dead": "Dead",
   "alive": "Alive",
   "noData": "unknown",
   "wrongLoginOrPassword": "Wrong password or login",
-  "ok": "OK"
+  "ok": "OK",
+  "man": "Man",
+  "male": "Male",
+  "female": "Female",
+  "charactersTotal": "",
+  "charactersListIsEmpty": "No persons found",
+  "somethingWentWrong": "Something went wrong :-("
+
 }

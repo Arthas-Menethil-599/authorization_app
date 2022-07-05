@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import '../../../generated/l10n.dart';
 
 class SearchField extends StatelessWidget {
-  const SearchField({Key? key}) : super(key: key);
+  const SearchField({Key? key, this.onChanged}) : super(key: key);
+
+  final ValueChanged<String>? onChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +17,7 @@ class SearchField extends StatelessWidget {
         children: [
           Expanded(
             child: TextField(
+              onChanged: onChanged,
               style: AppStyles.s16w400,
               decoration: InputDecoration(
                 hintText: S.of(context).searchCharacter,

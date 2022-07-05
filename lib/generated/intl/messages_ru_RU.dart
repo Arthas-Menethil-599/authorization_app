@@ -20,13 +20,16 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ru_RU';
 
+  static String m0(total) => "Всего персонажей: ${total}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alive": MessageLookupByLibrary.simpleMessage("Живой"),
-        "allCharacters":
-            MessageLookupByLibrary.simpleMessage("Всего персонажей"),
+        "allCharacters": m0,
         "auth": MessageLookupByLibrary.simpleMessage("Авторизация"),
         "characters": MessageLookupByLibrary.simpleMessage("Персонажи"),
+        "charactersListIsEmpty":
+            MessageLookupByLibrary.simpleMessage("Персонажей не найдено"),
         "close": MessageLookupByLibrary.simpleMessage("Закрыть"),
         "counterValue":
             MessageLookupByLibrary.simpleMessage("Значение счетчика"),
@@ -36,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("У вас все еще нет аккаунта"),
         "english": MessageLookupByLibrary.simpleMessage("Английский"),
         "error": MessageLookupByLibrary.simpleMessage("Ошибка"),
+        "female": MessageLookupByLibrary.simpleMessage("Женский"),
         "homeScreen": MessageLookupByLibrary.simpleMessage("Домашний экран"),
         "inputErrorCheckLogin":
             MessageLookupByLibrary.simpleMessage("Проверьте логин"),
@@ -49,6 +53,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Введите логин и пароль"),
         "language": MessageLookupByLibrary.simpleMessage("Язык"),
         "login": MessageLookupByLibrary.simpleMessage("Логин"),
+        "male": MessageLookupByLibrary.simpleMessage("Мужской"),
+        "man": MessageLookupByLibrary.simpleMessage("Человек"),
         "noData": MessageLookupByLibrary.simpleMessage("Неизвестно"),
         "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
@@ -57,6 +63,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Найти персонажа"),
         "settings": MessageLookupByLibrary.simpleMessage("Настройки"),
         "signIn": MessageLookupByLibrary.simpleMessage("Вход"),
+        "somethingWentWrong":
+            MessageLookupByLibrary.simpleMessage("Что-то пошло не так :-("),
         "tryAgain": MessageLookupByLibrary.simpleMessage("Попробуйте снова"),
         "wrongLoginOrPassword": MessageLookupByLibrary.simpleMessage(
             "Введен неверный логин или пароль")

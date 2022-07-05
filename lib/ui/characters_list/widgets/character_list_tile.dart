@@ -3,7 +3,7 @@ import 'package:authorization_app/widgets/user_ava.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/app_colors.dart';
-import '../../../dto/Character.dart';
+import '../../../dto/character.dart';
 import '../../../generated/l10n.dart';
 
 class CharacterListTile extends StatelessWidget {
@@ -12,14 +12,14 @@ class CharacterListTile extends StatelessWidget {
   final Character character;
 
   Color _statusColor(String? status) {
-    if (status == 'Мертвый') return AppColors.statusRed;
-    if (status == 'Живой') return AppColors.statusGreen;
+    if (status == 'Dead') return AppColors.statusRed;
+    if (status == 'Alive') return AppColors.statusGreen;
     return Colors.grey;
   }
 
   String _statusLabel(String? status) {
-    if (status == 'Мертвый') return S.current.dead;
-    if (status == 'Живой') return S.current.alive;
+    if (status == 'Dead') return S.current.dead;
+    if (status == 'Alive') return S.current.alive;
     return S.current.noData;
   }
 

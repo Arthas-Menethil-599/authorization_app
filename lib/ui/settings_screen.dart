@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 
 import '../constants/app_colors.dart';
 import '../constants/app_styles.dart';
 import '../generated/l10n.dart';
+import '../repo/repo_settings.dart';
 import '../widgets/app_nav_bar.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -51,6 +53,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                 ],
                 onChanged: (value) async {
+                  if (value == null) return;
                   if (value == 'ru_RU') {
                     await S.load(
                       const Locale('ru', 'RU'),
@@ -62,6 +65,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     );
                     setState(() {});
                   }
+                  final repoSettings =
+                      Provider.of<RepoSettings>(context, listen: false);
+                  repoSettings.saveLocale(value);
                 },
               )
             ],

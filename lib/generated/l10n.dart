@@ -270,13 +270,13 @@ class S {
     );
   }
 
-  /// `Total characters`
-  String get allCharacters {
+  /// `Total characters: {total}`
+  String allCharacters(Object total) {
     return Intl.message(
-      'Total characters',
+      'Total characters: $total',
       name: 'allCharacters',
       desc: '',
-      args: [],
+      args: [total],
     );
   }
 
@@ -325,6 +325,66 @@ class S {
     return Intl.message(
       'OK',
       name: 'ok',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Man`
+  String get man {
+    return Intl.message(
+      'Man',
+      name: 'man',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Male`
+  String get male {
+    return Intl.message(
+      'Male',
+      name: 'male',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Female`
+  String get female {
+    return Intl.message(
+      'Female',
+      name: 'female',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get charactersTotal {
+    return Intl.message(
+      '',
+      name: 'charactersTotal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No persons found`
+  String get charactersListIsEmpty {
+    return Intl.message(
+      'No persons found',
+      name: 'charactersListIsEmpty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Something went wrong :-(`
+  String get somethingWentWrong {
+    return Intl.message(
+      'Something went wrong :-(',
+      name: 'somethingWentWrong',
       desc: '',
       args: [],
     );

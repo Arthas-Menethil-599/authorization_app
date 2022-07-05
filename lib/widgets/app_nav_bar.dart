@@ -1,7 +1,7 @@
-import 'package:authorization_app/ui/characters_list/characters_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../ui/characters_list/characters_list_screen.dart';
 import '../constants/app_assets.dart';
 import '../constants/app_colors.dart';
 import '../generated/l10n.dart';
