@@ -2,7 +2,6 @@ import 'package:authorization_app/bloc/characters/bloc_characters.dart';
 import 'package:authorization_app/repo/repo_characters.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 
 import '../repo/api.dart';
 import '../repo/repo_settings.dart';

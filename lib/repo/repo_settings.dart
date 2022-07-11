@@ -1,10 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class RepoSettings {
-  RepoSettings._();
-  static final _instance = RepoSettings._();
-  factory RepoSettings() => _instance;
-
   SharedPreferences? prefs;
 
   Future<void> init() async {

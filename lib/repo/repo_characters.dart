@@ -1,7 +1,3 @@
-import 'dart:convert';
-
-import 'package:http/http.dart' as http;
-
 import '../dto/character.dart';
 import '../generated/l10n.dart';
 import 'api.dart';
@@ -25,7 +21,6 @@ class RepoCharacters {
           .toList();
       return ResultRepoCharacters(charactersList: charactersList);
     } catch (error) {
-      print('Error : $error');
       return ResultRepoCharacters(
         errorMessage: S.current.somethingWentWrong,
       );
